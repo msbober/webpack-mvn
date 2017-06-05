@@ -27,7 +27,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("forward:/index.html");
+        registry.addViewController("/").setViewName("redirect:/index.html");
     }
 
     // During development, webpack server runs on localhost:8080
@@ -42,5 +42,6 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
             }
         };
     }
-
+    
+    
 }

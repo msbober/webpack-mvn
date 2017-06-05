@@ -9,7 +9,7 @@ if (typeof document !== 'undefined') {
   fetch(apiEndpoint + '/webpack').then(function(response) {
     return response.json();
   }).then(function(obj) {
-    el.innerHTML = greeting + '<br>' + obj.content + '<br>At ' + obj.time;
+    el.innerHTML = greeting + '<br>uuu' + obj.content + '<br>At ' + obj.time;
     document.body.appendChild(el);
   }).catch(function(err) {
     el.innerHTML = 'oh no…';
